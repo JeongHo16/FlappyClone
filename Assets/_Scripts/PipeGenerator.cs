@@ -21,7 +21,7 @@ public class PipeGenerator : MonoBehaviour
         if (elapsedTime > time)
         {
             GameObject newPipe = Instantiate(pipe);
-            newPipe.transform.position = new Vector3(1, Random.Range(-1f, 3f), 0);
+            newPipe.transform.position = new Vector3(4.5f, Random.Range(0f, 5f), 0);
             elapsedTime = 0f;
             Destroy(newPipe, 5f);
         }
