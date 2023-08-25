@@ -21,7 +21,9 @@ public class BirdJump : MonoBehaviour
         {
             ac.Play();
             rb.velocity = Vector2.up * jumpPower;
+            transform.rotation = Quaternion.Euler(0, 0, 30f);
         }
+        transform.Rotate(0, 0, -1f);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
