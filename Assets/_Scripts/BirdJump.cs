@@ -23,6 +23,10 @@ public class BirdJump : MonoBehaviour
             rb.velocity = Vector2.up * jumpPower;
             transform.rotation = Quaternion.Euler(0, 0, 30f);
         }
+    }
+
+    void FixedUpdate()
+    {
         transform.Rotate(0, 0, -1f);
     }
 
